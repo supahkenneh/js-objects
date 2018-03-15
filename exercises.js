@@ -13,6 +13,15 @@ Objects in Javascript can be compared to objects in real life. Objects has a col
     
     Console.log the object.
 */
+
+var books = {
+  title: "The Obtacle is the Way",
+  author: "Ryan Hoiday",
+  category: "Self Help",
+  pages: 200,
+};
+
+console.log(books);
     
   
 /*
