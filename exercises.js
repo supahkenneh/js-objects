@@ -299,6 +299,21 @@ console.log(sumObjResult);
         plainBoxResult and use `console.log` to inspect your results.
  */
 
+var plainBox = {};
+plainBox.color = 'blue';
+plainBox.size = 15;
+plainBox.contents = [];
+
+ function putInPlainBox(obj){
+  for (var i = 0; i < 10; i++){
+    var random = Math.floor(Math.random()*10);
+    obj.contents.push(random);
+  }
+  return obj.contents;
+ }
+
+ var plainBoxResult = console.log(putInPlainBox(plainBox));
+
 
 /*
 11. Detecting transmission
