@@ -250,8 +250,8 @@ printOrders(arrayOfObjects);
 */
 
 var sumObj = {
-  a: 2,
-  b: 3,
+  a: 5,
+  b: 10,
   result: undefined,
 };
 
@@ -280,6 +280,13 @@ console.log(sumObjResult);
         Invoke this function and pass in your object. Further test by changing the values of the object being passed in or 
         **create more** objects and invoke your function multiple times.
  */
+
+ function printObj(obj){
+  obj.result = obj.a + obj.b;
+  console.log(obj.a + ' + ' + obj.b + ' = ' + obj.result);
+ }
+
+ printObj(sumObjResult);
 
 
 /*
